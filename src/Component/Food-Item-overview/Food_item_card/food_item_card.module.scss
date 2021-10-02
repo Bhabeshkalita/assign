@@ -1,0 +1,70 @@
+.foodItemCard{
+    // width: 35%;
+    position: relative;
+    border: 1px solid rgba(126, 126, 126, 0.445);
+    &_image{
+        width: 100%;
+        & img{
+            width: 100%;
+        }
+    }
+    &_content{
+        padding: 1rem;
+        & h4{
+            font-size: 1.2rem;
+        }
+        & p{
+            color: red;
+            & span{
+                color: rgb(187, 178, 178);
+            }
+        }
+        &_ratingsAndFoodType{
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &_ratings{
+                &_span1{
+                    background-color: rgb(114, 77, 199);
+                    padding: 0.1rem 0.8rem;
+                    border-radius: 5px;
+                    color: white;
+                    margin-right: 0.4rem;
+                }
+                &_span2{
+                    color: rgb(128, 124, 124);
+                }
+            }
+            &_foodType{
+                display: flex;
+                &_indicator{
+                    // width: 20px;
+                    // height: 20px;
+                    padding: 0.5rem;
+                    border: 1px solid green;
+                    margin: 0 0.5rem;
+                    & div{
+                        height: 0.5rem;
+                        width: 0.5rem;
+                        border: 1px solid green;
+                        background-color: green;
+                        border-radius: 50%;
+                    }
+                }
+                &_indicatorNonVeg{
+                    padding: 0.5rem;
+                    border: 1px solid red !important;
+                    margin: 0 0.5rem;
+                    & div{
+                        height: 0.5rem;
+                        width: 0.5rem;
+                        border: 1px solid red !important;
+                        background-color: red !important;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

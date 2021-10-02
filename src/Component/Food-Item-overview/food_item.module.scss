@@ -1,0 +1,13 @@
+.foodItem{
+padding: 1rem;
+    &_card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        &_container{
+            width: 30%;
+            margin-top: 1rem;
+        }
+    }
+}
